@@ -1,0 +1,1059 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://alvarez.is
+ *
+ * Project Name: SPOT - Free Bootstrap 3 Theme
+ * Version: 1.0
+ * URL: http://blacktie.co
+ */
+ 
+/* FONTS */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
+
+/* OVERALL ASPECT */
+
+body {
+  background-color: #f2f2f2;
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    
+    margin-top: 70px;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #333;
+}
+
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: #39B7EA;
+    word-wrap: break-word;
+    font-weight:bold;
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+.navbar {
+	font-weight: 800;
+	font-size: 12px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.navbar-inverse {
+	background: #2d2d2d;
+	border-color: #2d2d2d;
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+	background: #39B7EA
+}
+
+.navbar-inverse .navbar-brand {
+	color: #999999;
+	font-weight: bolder;
+	font-size: 22px;
+	letter-spacing: 1px;
+}
+
+.navbar-inverse .navbar-brand i {
+	color: #ff7878;
+	font-size: 22px;
+	letter-spacing: 1px;
+}
+
+/*TILT*/
+.tilt {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+.tilt:hover {
+  -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+#headerwrap {
+	background: url(../img/header-bg.jpg) no-repeat center top;
+	margin-top: -10px;
+	padding-top:20px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 500px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#headerwrap h1 {
+	margin-top: 100px;
+	color: black;
+	font-size: 4em;
+	font-weight: 300;
+	letter-spacing: 3px;
+}
+
+#headerwrap h2 {
+	color: white;
+	font-size: 40px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+#headerwrap .text {
+    text-align: right;
+    max-width:450px;
+    float:right;
+}
+/* Dark Grey Wrap */
+#dg {
+	background: #e0e0e0;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	text-align: center;
+}
+
+#dg h4 {
+	font-weight: 700;
+}
+
+/* Light Grey */
+#lg {
+	background: #ebebeb;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	text-align: center;
+}
+
+#lg h4 {
+	font-weight: 700;
+}
+
+
+/* Red Wrap */
+.r {
+	background: #a0ce55;
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+.r h4 {
+	color: white;
+	font-weight: 700;
+}
+
+.r p {
+	color: #000;
+}
+
+.r h1 {
+    color:#FFF;
+    font-weight:bold;
+}
+
+.r a {
+    color:#FFF;
+}
+
+/* Blue Wrap */
+
+#blue {
+	background: #3498db;
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+#blue h4 {
+	color: white;
+	font-weight: 700;
+}
+
+#blue p {
+	color: white;
+}
+
+
+
+/* Footer Wrap */
+#f {
+	background: #2d2d2d;
+	padding-top: 30px;
+	padding-bottom: 30px;
+    z-index: 100;
+    position:relative;
+}
+
+#f i {
+	color: #bdbdbd;
+	font-size: 30px;
+	padding: 20px;
+}
+
+#f i:hover {
+	color: #39B7EA;
+}
+
+/****** SECTIONS *****/
+
+.w {
+	padding-top: 35px;
+}
+
+.w h4 {
+	font-weight: 700;
+}
+
+.w i {
+	color: #39B7EA;
+	font-size: 70px;
+}
+
+
+.wb {
+	padding-top: 35px;
+	margin-bottom: 0px;
+}
+
+.wb h4 {
+	font-weight: 700;
+}
+
+.desc {
+	padding-top: 35px;
+}
+
+.desc h4 {
+	font-weight: 700;
+}
+
+.desc i {
+	color: #ff7878;
+	font-size: 12px;
+	padding: 5px;
+}
+
+/***** MODAL CONTACT *****/
+.modal-content {
+	border-radius: 0px;
+
+}
+
+.modal-header {
+	background: #bdbdbd;
+	color: white;
+}
+
+.modal-header h4 {
+	font-weight: 700;
+}
+
+.modal-body {
+	background: #f2f2f2;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+}
+
+.modal-footer {
+	background: #f2f2f2;
+	margin-top: 0px; 
+}
+/* ==========================================================================
+   Repair Section
+   ========================================================================== */
+   
+   #repair {
+    background-color:#39B7EA;
+    padding:60px 0;
+    text-align:center;
+   }
+
+   #repair h2 {
+    color:#FFF;
+    font-weight: bold;
+   }
+
+   #repair p {
+    color:#FFF;
+
+   }
+   #repair strong {
+    color:#FFF;
+    color:aquamarine;
+   }
+   @media(max-width: 1200px){
+        #repair img {
+            max-width:50%;
+            display:inline-block;
+        }
+    }
+
+/* ==========================================================================
+   Flashing Section
+   ========================================================================== */
+   
+    #flashing {
+        background-color:#ED526F;
+        padding: 60px 0;
+        text-align:center;
+    }
+
+    #flashing h2 {
+    color:#F0E96B;
+    font-weight: bold;
+   }
+
+   #flashing p {
+    color:#FFF;
+
+   }
+   #flashing strong {
+    color:#F0E96B;
+   }
+   @media(max-width: 1200px){
+        #flashing img {
+            max-width:50%;
+            display:inline-block;
+        }
+    }
+
+    /* ==========================================================================
+   Payments Section
+   ========================================================================== */
+   
+    #payments {
+        padding: 60px 0;
+        text-align:center;
+    }
+
+    #payments h2 {
+    color:#39B7EA;
+    font-weight: bold;
+   }
+
+   
+   #payments strong {
+    color:#F0E96B;
+   }
+   @media(max-width: 1200px){
+        #payments img {
+            max-width:50%;
+            display:inline-block;
+        }
+    }
+/* ==========================================================================
+   Pricing Tables
+   ========================================================================== */
+   
+.pricing-option {
+    padding-bottom: 40px;
+}
+
+.pricing-option .pricing-top {
+    position: relative;
+    background: #222;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+
+    padding: 40px 20px 30px 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.pricing-option .pricing-top .special-label {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #1abc9c;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3px 0;
+}
+
+.special .pricing-top {
+    background: black;
+}
+
+.pricing-option .pricing-edition {
+    text-transform: uppercase;
+    display: block;
+    font-size: 25px;
+    letter-spacing: 8px;
+}
+
+.pricing-option .price {
+    display: inline-block;
+    position: relative;
+}
+
+.pricing-option .price sup {
+    position: absolute;
+    top: 50px;
+    left: -10px;
+    font-size: 24px;
+}
+
+.pricing-option .price .price-amount {
+    font-size: 108px;
+    letter-spacing: -4px;
+}
+
+.pricing-option .price small {
+    position: relative;
+    left: -10px;
+    font-size: 18px;
+}
+
+.pricing-option ul {
+    list-style: none;
+    margin: 0;
+    background: #eee;
+    text-align: center;
+    padding-left: 0px;
+}
+
+.pricing-option ul li {
+    border-bottom: solid 1px #e1e1e1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pricing-option .pricing-signup {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 10px;
+    color: white;
+    background: #1abc9c;
+}
+
+.pricing-option .pricing-signup:hover {
+    background: #ff7878;
+}
+/* THeme Customizations */
+
+.navbar-brand .logo {
+    max-width: 180px
+}
+
+.navbar .number {
+    color:#FFF;
+    font-weight: bold;
+    font-size:18px;
+    text-transform: uppercase;
+    float:right;
+}
+.navbar .number span {
+    color:#8dc73f;
+}
+#carriers {
+    background: #e0e0e0;
+}
+#carriers h4 
+{
+    padding-top:70px;
+    font-weight: 700;
+}
+#carriers .carriers-heading {
+    background-color: #F2F2F2;
+}
+#carriers .carriers-heading p {
+    max-width:750px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#carriers .col-lg-2  img {
+    width:100%;
+    max-width: 320px;
+    display:inline-block;
+    padding: 1.5em 2em;
+}
+
+.phone-top {
+    display:inline-block;
+    width:65%;
+}
+.phones {
+    display:inline-block;
+}
+
+.mapwrap {
+    position:relative;
+    padding-bottom: 25.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+}
+.mapwrap iframe {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+.navbar-brand {
+    padding:inherit;
+}
+
+.carrier-card {
+    padding:45px;
+    height:200px;
+}
+.carrier-card img {
+    width:100%;
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+
+    /* IE 5-7 */
+    filter: alpha(opacity=50);
+
+    /* Netscape */
+    -moz-opacity: 0.5;
+
+    /* Safari 1.x */
+    -khtml-opacity: 0.5;
+
+    /* Good browsers */
+    opacity: 0.5;
+}
+.carrier-card img:hover {
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+
+    /* IE 5-7 */
+    filter: alpha(opacity=100);
+
+    /* Netscape */
+    -moz-opacity: 1.0;
+
+    /* Safari 1.x */
+    -khtml-opacity: 1.0;
+
+    /* Good browsers */
+    opacity: 1.0;
+}
+
+.b {
+    background: #39B7EA;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.b h1 {
+    color:#FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#small-headerwrap {
+    background-color:#000;
+    margin-top: -10px;
+    padding-top:20px;
+    text-align:center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 200px;
+    width: 100%;
+    
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#small-headerwrap h1 {
+    margin-top: 100px;
+    color: black;
+    font-size: 4em;
+    font-weight: 300;
+    letter-spacing: 3px;
+    font-size:3.5em;
+    color:#FFF;
+}
+
+#small-headerwrap h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color:#222;
+    font-size:15px;
+}
+
+#small-headerwrap .text {
+    text-align: right;
+    max-width:450px;
+    float:right;
+}
+
+/*
+ ************************************************************
+ Simple Mobile Header
+*************************************************************
+ */
+#small-headerwrap.simple-mobile {
+    background-color:#8dc73f;
+}
+@media(min-width: 768px){
+    #small-headerwrap.simple-mobile {
+    background:#8dc73f url(../img/simple-mobile/header-bg.png) no-repeat center top;
+   
+}
+}
+
+#small-headerwrap.simple-mobile h1
+{
+    font-size:3.5em;
+    color:#FFF;
+}
+#small-headerwrap.simple-mobile h2 {
+    color:#222;
+    font-size:15px;
+}
+
+/*
+ ************************************************************
+ Page Plus Header
+*************************************************************
+ */
+
+#small-headerwrap.page-plus {
+    background-color:#b73232;
+}
+
+.page-plus p {
+    padding-top: 35px;
+
+}
+
+/*
+ ************************************************************
+ Tracfone Header
+*************************************************************
+ */
+
+
+.tracfone p {
+    padding-top: 35px;
+
+}
+#small-headerwrap.tracfone h1 {
+    color:#8dc73f;
+}
+#small-headerwrap.tracfone h2 {
+    color:#FFF;
+}
+
+/*
+ ************************************************************
+ Net 10  Header
+*************************************************************
+ */
+
+
+.net-10 p {
+    padding-top: 35px;
+
+}
+#small-headerwrap.net-10 {
+    background-color:#39B7EA;
+}
+#small-headerwrap.net-10 h1 {
+    color:#000;
+}
+#small-headerwrap.net-10 h2 {
+    color:#FFF;
+}
+
+/*
+ ************************************************************
+H20 Header
+*************************************************************
+ */
+
+
+.h2o p {
+    padding-top: 35px;
+
+}
+#small-headerwrap.h2o {
+    background-color:#333;
+}
+#small-headerwrap.h2o h1 {
+    color:#fcf034;
+}
+#small-headerwrap.h2o h2 {
+    color:#FFF;
+}
+
+/*
+ ************************************************************
+Telcel America Header
+*************************************************************
+ */
+
+
+.telcell p {
+    padding-top: 35px;
+
+}
+#small-headerwrap.telcell {
+    background-color:#03F;
+}
+#small-headerwrap.telcell h1 {
+    color:#FFF;
+}
+#small-headerwrap.telcell h2 {
+    color:#F33;
+}
+
+/*
+ ************************************************************
+Lyca Mobile America Header
+*************************************************************
+ */
+
+
+.lyca p {
+    padding-top: 35px;
+
+}
+#small-headerwrap.lyca {
+    background-color:#090;
+}
+#small-headerwrap.lyca h1 {
+    color:#FFF;
+}
+#small-headerwrap.lyca h2 {
+    color:#000;
+}
+
+/*
+ ************************************************************
+Ultra Mobile America Header
+*************************************************************
+ */
+
+
+.ultra p {
+    padding-top: 35px;
+
+}
+#small-headerwrap.ultra {
+    background-color:#9900cc;
+}
+#small-headerwrap.ultra h1 {
+    color:#FFF;
+}
+#small-headerwrap.ultra h2 {
+    color:#000;
+}
+
+
+/*
+ ************************************************************
+ Plan Table
+*************************************************************
+ */
+.plan-table th {
+    font-size: 0.7em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.table-responsive
+{
+    overflow-x: auto;
+}
+
+.plan-table td:first-child {
+    font-weight:bold;
+    text-transform: uppercase;
+}
+
+.plan-table i {
+    font-size:20px;
+}
+
+.plans h3 {
+    font-weight: bold;
+}
+.disclaimer {
+    font-size:12px;
+    line-height: 15px;
+    margin:10px 10px;
+}
+
+.simple-mobile .plan-table  i {
+    color:#8dc73f;
+}
+.simple-mobile h3 {
+    
+    color:#8dc73f;
+}
+.page-plus .plan-table i, .page-plus h3
+{
+    color:#b73232;
+}
+
+.tracfone .plan-table i, .tracfone h3 {
+    color:#8dc73f;
+}
+.net-10 .plan-table i.fa-times {
+    color:red;
+}
+.lyca .plan-table i.fa-times {
+    color:red;
+}
+.ultra .plan-table i.fa-check {
+    color:#9900cc;
+}
+
+
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+    /* Force table to not be like tables anymore */
+    table.table-responsive,
+    .table-responsive thead, 
+    .table-responsive tbody, 
+    .table-responsive th, 
+    .table-responsive td, 
+    .table-responsive tr { 
+        display: block; 
+    }
+    
+    /* Hide table headers (but not display: none;, for accessibility) */
+    .table-responsive thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    .table-responsive tr { border: 1px solid #ccc; }
+    
+    .table-responsive td { 
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee; 
+        position: relative;
+        padding-left: 50%; 
+    }
+    
+    .table-responsive td:before { 
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%; 
+        padding-right: 10px; 
+        white-space: nowrap;
+    }
+    
+    /*
+    Simple Mobile Label the data for Reponsive Tables
+    */
+    .simple-mobile .plan-table td:nth-of-type(1):before { content: "Plan Ammount:"; }
+    .simple-mobile .plan-table td:nth-of-type(2):before { content: "Service Days:"; }
+    .simple-mobile .plan-table td:nth-of-type(3):before { content: "Unlimited Talk:"; }
+    .simple-mobile .plan-table td:nth-of-type(4):before { content: "Unlimited Int'l Talk:"; }
+    .simple-mobile .plan-table td:nth-of-type(5):before { content: "Unlimited Text:"; }
+    .simple-mobile .plan-table td:nth-of-type(6):before { content: "Unlimited Int'l Text:"; }
+    .simple-mobile .plan-table td:nth-of-type(7):before { content: "4G LTE Data **:"; }
+
+
+    /*
+    Page PlusLabel the data for Reponsive Tables
+    */
+    .page-plus .plan-table td:nth-of-type(1):before { content: "Plan Ammount:"; }
+    .page-plus .plan-table td:nth-of-type(2):before { content: "Minutes:"; }
+    .page-plus .plan-table td:nth-of-type(3):before { content: "Text:"; }
+    .page-plus .plan-table td:nth-of-type(4):before { content: "Data:"; }
+    /*
+    Page Plus 2nd Table Labels
+     */
+    .page-plus .table-2 .plan-table td:nth-of-type(1):before { content: "Plan Ammount:"; }
+    .page-plus .table-2 .plan-table td:nth-of-type(2):before { content: "Minutes:"; }
+    .page-plus .table-2 .plan-table td:nth-of-type(3):before { content: "Cost Per Min:"; }
+    .page-plus .table-2 .plan-table td:nth-of-type(4):before { content: "Min Last For:"; }
+
+    /*
+    Page PlusLabel the data for Reponsive Tables
+    */
+    .tracfone .plan-table td:nth-of-type(1):before { content: "Plan Ammount:"; }
+    .tracfone .plan-table td:nth-of-type(2):before { content: "Minutes:"; }
+    .tracfone .plan-table td:nth-of-type(3):before { content: "Service Days:"; }
+    
+
+    /*
+    Net10 Label the data for Reponsive Tables
+    */
+    .net-10 .plan-table td:nth-of-type(1):before { content: "Plan Ammount:"; }
+    .net-10 .plan-table td:nth-of-type(2):before { content: "Service Days:"; }
+    .net-10 .plan-table td:nth-of-type(3):before { content: "Unlimited Talk:"; }
+    .net-10 .plan-table td:nth-of-type(4):before { content: "Unlimited Int'l Talk:"; }
+    .net-10 .plan-table td:nth-of-type(5):before { content: "Unlimited Text:"; }
+    .net-10 .plan-table td:nth-of-type(6):before { content: "Unlimited Int'l Text:"; }
+    .net-10 .plan-table td:nth-of-type(7):before { content: "Data*:"; }
+
+     /*
+    H2o Wireless Label the data for Reponsive Tables
+    */
+    .h2o .plan-table td:nth-of-type(1):before { content: "Plan Ammount:"; }
+    .h2o .plan-table td:nth-of-type(2):before { content: "Service Days:"; }
+    .h2o .plan-table td:nth-of-type(3):before { content: "Unlimited Talk:"; }
+    .h2o .plan-table td:nth-of-type(4):before { content: "Unlimited Int'l Talk:"; }
+    .h2o .plan-table td:nth-of-type(5):before { content: "Unlimited Text:"; }
+    .h2o .plan-table td:nth-of-type(6):before { content: "Unlimited Int'l Text:"; }
+    .h2o .plan-table td:nth-of-type(7):before { content: "Data*:"; }
+
+     /*
+    H2o Wireless Table 2 Label the data for Reponsive Tables
+    */
+    .h2o .table-2 .plan-table td:nth-of-type(1):before { content: "Plan Ammount:"; }
+    .h2o .table-2 .plan-table td:nth-of-type(2):before { content: "Service Days:"; }
+    .h2o .table-2 .plan-table td:nth-of-type(3):before { content: "Minutes:"; }
+    .h2o .table-2 .plan-table td:nth-of-type(4):before { content: "Data:"; }
+
+     /*
+    Telcell Wireless Label the data for Reponsive Tables
+    */
+    .telcell .plan-table td:nth-of-type(1):before { content: "Plan Ammount:"; }
+    .telcell .plan-table td:nth-of-type(2):before { content: "Service Days:"; }
+    .telcell .plan-table td:nth-of-type(3):before { content: "Unlimited Talk:"; }
+    .telcell .plan-table td:nth-of-type(4):before { content: "Unlimited Int'l Talk:"; }
+    .telcell .plan-table td:nth-of-type(5):before { content: "Unlimited Text:"; }
+    .telcell .plan-table td:nth-of-type(6):before { content: "Unlimited Int'l Text:"; }
+    .telcell .plan-table td:nth-of-type(7):before { content: "Data*:"; }
+
+      /*
+    Lyca Mobile Label the data for Reponsive Tables
+    */
+    .lyca .plan-table td:nth-of-type(1):before { content: "Plan Ammount:"; }
+    .lyca .plan-table td:nth-of-type(2):before { content: "Service Days:"; }
+    .lyca .plan-table td:nth-of-type(3):before { content: "Unlimited Talk:"; }
+    .lyca .plan-table td:nth-of-type(4):before { content: "Unlimited Int'l Talk:"; }
+    .lyca .plan-table td:nth-of-type(5):before { content: "Unlimited Text:"; }
+    .lyca .plan-table td:nth-of-type(6):before { content: "Unlimited Int'l Text:"; }
+    .lyca .plan-table td:nth-of-type(7):before { content: "Data*:"; }
+
+      /*
+    Ultra Mobile Label the data for Reponsive Tables
+    */
+    .ultra .plan-table td:nth-of-type(1):before { content: "Plan Ammount:"; }
+    .ultra .plan-table td:nth-of-type(2):before { content: "Service Days:"; }
+    .ultra .plan-table td:nth-of-type(3):before { content: "Unlimited Talk:"; }
+    .ultra .plan-table td:nth-of-type(4):before { content: "Unlimited Int'l Talk:"; }
+    .ultra .plan-table td:nth-of-type(5):before { content: "Unlimited Text:"; }
+    .ultra .plan-table td:nth-of-type(6):before { content: "Unlimited Int'l Text:"; }
+    .ultra .plan-table td:nth-of-type(7):before { content: "Data*:"; }
+}
+
+.anchor:before {
+      display: block; 
+      content: " "; 
+      margin-top: -105px; 
+      height: 200px; 
+      visibility: hidden; 
+}
+
+/*
+Make the Facebook Like box responsive (fluid width)
+https://developers.facebook.com/docs/reference/plugins/like-box/
+*/
+ 
+/* This element holds injected scripts inside iframes that in some cases may stretch layouts. So, we're just hiding it. */
+#fb-root {
+  display: none;
+}
+ 
+/* To fill the container and nothing else */
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+  width: 100% !important;
+}
